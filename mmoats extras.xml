@@ -76,8 +76,14 @@
   </template>
   <template name="ang:html" value="&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;&lt;head lang=&quot;en&quot;&gt;&#10;&#9;&lt;meta charset=&quot;UTF-8&quot;&gt;&#10;&#9;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;&#10;&#9;&lt;meta name=“viewport” content=&quot;initial-scale=1.0&quot;&gt;&#10;&#9;&lt;title&gt;Class Schedules&lt;/title&gt;&#10;&#9;&lt;link rel=&quot;stylesheet&quot; href=&quot;css/&lt;%= moduleName %&gt;.all.min.css&quot;/&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;div ng-app=&quot;&lt;%= moduleName %&gt;&quot; ng-strict-di&gt;&#10;&#9;&lt;ui-view&gt;&lt;/ui-view&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;script src=&quot;lib/angular.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;lib/angular-ui-router.min.js&quot;&gt;&lt;/script&gt;&#10;&#10;&lt;script src=&quot;js/&lt;%= moduleName %&gt;.base.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;js/&lt;%= moduleName %&gt;.all.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;js/&lt;%= moduleName %&gt;.partials.js&quot;&gt;&lt;/script&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;" description="Inserts default HTML stub" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
+      <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ang:package" value="{&#10;  &quot;name&quot;: &quot;$moduleName$&quot;,&#10;  &quot;version&quot;: &quot;0.1.0&quot;,&#10;  &quot;private&quot;: true,&#10;  &quot;description&quot;: &quot;Gulp Angular Build&quot;,&#10;  &quot;main&quot;: &quot;gulpfile.js&quot;,&#10;  &quot;scripts&quot;: {&#10;    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;&#10;  },&#10;  &quot;author&quot;: &quot;&quot;,&#10;  &quot;license&quot;: &quot;&quot;,&#10;  &quot;dependencies&quot;: {&#10;    &quot;gulp&quot;: &quot;^3.9.0&quot;,&#10;    &quot;gulp-angular-templatecache&quot;: &quot;^1.6.0&quot;,&#10;    &quot;gulp-concat&quot;: &quot;^2.5.2&quot;,&#10;    &quot;gulp-minify-css&quot;: &quot;^1.2.0&quot;,&#10;    &quot;gulp-ng-annotate&quot;: &quot;^1.0.0&quot;,&#10;    &quot;gulp-ng-constant&quot;: &quot;^0.3.0&quot;,&#10;    &quot;gulp-plumber&quot;: &quot;^1.0.1&quot;,&#10;    &quot;gulp-rename&quot;: &quot;^1.2.2&quot;,&#10;    &quot;gulp-sass&quot;: &quot;^2.0.1&quot;,&#10;    &quot;gulp-sourcemaps&quot;: &quot;^1.5.2&quot;,&#10;    &quot;gulp-template&quot;: &quot;^3.0.0&quot;,&#10;    &quot;gulp-uglify&quot;: &quot;^1.2.0&quot;,&#10;    &quot;main-bower-files&quot;: &quot;^2.8.0&quot;&#10;  },&#10;  &quot;devDependencies&quot;: {&#10;    &quot;browser-sync&quot;: &quot;^2.7.12&quot;,&#10;    &quot;http-proxy-middleware&quot;: &quot;^0.1.0&quot;,&#10;    &quot;proxy-middleware&quot;: &quot;^0.13.0&quot;&#10;  }&#10;}" description="Insert package.json file for gulpfile.js" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSON" value="true" />
     </context>
   </template>
 </templateSet>
