@@ -86,4 +86,13 @@
       <option name="JSON" value="true" />
     </context>
   </template>
+  <template name="ang:state" value=".state('$HOME$', {&#10;    templateProvider: ['$templateCache', function ($templateCache) {&#10;        return $templateCache.get('$COMPONENTFOLDER$/$COMPONENTNAME$.partial.html');&#10;    }],&#10;    controller: '$CONTROLLER$',&#10;    controllerAs: 'vm'&#10;})" description="Inserts a new ui-router State definition" toReformat="false" toShortenFQNames="true">
+    <variable name="HOME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMPONENTFOLDER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMPONENTNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
