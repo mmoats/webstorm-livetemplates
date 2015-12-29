@@ -33,3 +33,5 @@ ang:module        - Inserts a blank AngularJS Module <br />
 ang:routes        - Inserts a ui-router StateProvider file with example <br />
 
 ang:service       - Inserts a blank AngularJS service <br />
+
+ang:package       - Insert package.json file for gulpfile.js
