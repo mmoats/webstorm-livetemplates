@@ -8,7 +8,7 @@
       <option name="JS_STATEMENT" value="false" />
     </context>
   </template>
-  <template name="ang:controller" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.controller('$controllerName$', $controllerFn$);&#10;&#10;&#9;&#9;&#9;function $controllerFn$() {&#10;&#9;&#9;&#9;&#9;$scope.example = 'Parent controller';&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Controller" toReformat="false" toShortenFQNames="true">
+  <template name="ang:controller" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.controller('$controllerName$', $controllerFn$);&#10;&#9;&#9;&#9;&#10;&#9;&#9;&#9;$controllerFn$.$inject = [''];&#10;&#10;&#9;&#9;&#9;function $controllerFn$ () {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Controller" toReformat="false" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controllerFn" expression="" defaultValue="" alwaysStopAt="true" />
@@ -16,7 +16,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ang:directive" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.directive('$directiveName$', $directiveFn$);&#10;&#10;&#9;&#9;&#9;function $directiveFn$() {&#10;&#9;&#9;&#9;&#9;return {&#10;&#9;&#9;&#9;&#9;&#9;require: '?ngModel',&#10;&#9;&#9;&#9;&#9;&#9;priority: 1000,&#10;&#9;&#9;&#9;&#9;&#9;link: function (scope, element, attrs, ngModelCtrl) {&#10;                        $END$&#10;&#9;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Directive" toReformat="false" toShortenFQNames="true">
+  <template name="ang:directive" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.directive('$directiveName$', $directiveFn$);&#10;&#10;&#9;&#9;&#9;function $directiveFn$ () {&#10;&#9;&#9;&#9;&#9;return {&#10;&#9;&#9;&#9;&#9;&#9;require: '?ngModel',&#10;&#9;&#9;&#9;&#9;&#9;priority: 1000,&#10;&#9;&#9;&#9;&#9;&#9;link: function (scope, element, attrs, ngModelCtrl) {&#10;                        $END$&#10;&#9;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Directive" toReformat="false" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="directiveName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="directiveFn" expression="" defaultValue="" alwaysStopAt="true" />
@@ -24,7 +24,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ang:factory" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.factory('$factoryName$', $factoryFn$);&#10;&#10;&#9;&#9;&#9;function $factoryFn$() {&#10;&#9;&#9;&#9;&#9;return {&#10;                    $END$&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Factory" toReformat="false" toShortenFQNames="true">
+  <template name="ang:factory" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.factory('$factoryName$', $factoryFn$);&#10;&#10;&#9;&#9;&#9;function $factoryFn$ () {&#10;&#9;&#9;&#9;&#9;return {&#10;                    $END$&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Factory" toReformat="false" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="factoryName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="factoryFn" expression="" defaultValue="" alwaysStopAt="true" />
@@ -32,7 +32,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ang:filter" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.filter('$factoryName$', $factoryFn$);&#10;&#10;&#9;&#9;&#9;function $factoryFn$() {&#10;&#9;&#9;&#9;&#9;return {&#10;                    $END$&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Filter" toReformat="false" toShortenFQNames="true">
+  <template name="ang:filter" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.filter('$factoryName$', $factoryFn$);&#10;&#10;&#9;&#9;&#9;function $factoryFn$ () {&#10;&#9;&#9;&#9;&#9;return {&#10;                    $END$&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Filter" toReformat="false" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="factoryName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="factoryFn" expression="" defaultValue="" alwaysStopAt="true" />
@@ -50,7 +50,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ang:service" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.service('$serviceName$', $serviceFn$);&#10;&#10;&#9;&#9;&#9;function $serviceFn$() {&#10;&#9;&#9;&#9;&#9;return {&#10;                    $END$&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS service" toReformat="false" toShortenFQNames="true">
+  <template name="ang:service" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.service('$serviceName$', $serviceFn$);&#10;&#10;&#9;&#9;&#9;function $serviceFn$ () {&#10;&#9;&#9;&#9;&#9;return {&#10;                    $END$&#10;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS service" toReformat="false" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="serviceName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="serviceFn" expression="" defaultValue="" alwaysStopAt="true" />
