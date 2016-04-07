@@ -1,13 +1,4 @@
 <templateSet group="mmoats extras">
-  <template name="ang:module" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$', [&#10;&#9;&#9;&#9;'ui.router'$END$&#10;&#9;&#9;]);&#10;&#10;})();" description="Inserts a blank AngularJS Module" toReformat="false" toShortenFQNames="true">
-    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-    </context>
-  </template>
   <template name="ang:controller" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$')&#10;&#9;&#9;&#9;.controller('$controllerName$', $controllerFn$);&#10;&#9;&#9;&#9;&#10;&#9;&#9;&#9;$controllerFn$.$inject = [''];&#10;&#10;&#9;&#9;&#9;function $controllerFn$ () {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;&#9;}&#10;&#10;})();" description="Inserts a blank AngularJS Controller" toReformat="false" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
@@ -66,6 +57,7 @@
   <template name="ang:gulpconfig" value="{&#10;&#9;&quot;public&quot;: &quot;./dist&quot;,&#10;&#9;&quot;api_proxy&quot;: &quot;/api&quot;,&#10;&#9;&quot;assets&quot;: [&#10;&#9;&#9;&quot;./vendor/**&quot;&#10;&#9;],&#10;&#9;&quot;js&quot;: [&#10;&#9;&#9;&quot;./src/**/*.module.js&quot;,&#10;&#9;&#9;&quot;./src/**/*.js&quot;,&#10;&#9;&#9;&quot;./src/**/**/*.js&quot;&#10;&#9;],&#10;&#9;&quot;partials&quot;: [&#10;&#9;&#9;&quot;./src/**/*.html&quot;&#10;&#9;],&#10;&#9;&quot;sass&quot;: [&#10;&#9;&#9;&quot;./src/**/*.scss&quot;&#10;&#9;],&#10;&#9;&quot;html&quot;: [&#10;&#9;&#9;&quot;./src/index.html&quot;&#10;&#9;]&#10;}" description="Inserts companion gulpfile config" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JSON" value="true" />
+      <option name="JAVA_SCRIPT" value="false" />
     </context>
   </template>
   <template name="ang:config" value="{&#10;&#9;&quot;module&quot;: &quot;$moduleName$&quot;,&#10;&#9;&quot;deps&quot;: [&#10;&#9;&#9;&quot;ui.router&quot;&#10;&#9;],&#10;&#9;&quot;constant&quot;: {&#10;&#9;&#9;&quot;local&quot;: {&#10;&#9;&#9;&#9;&quot;EnvironmentConfig&quot;: {&#10;&#9;&#9;&#9;&#9;&quot;api&quot;: &quot;http://localhost:9000&quot;&#10;&#9;&#9;&#9;}&#10;&#9;&#9;},&#10;&#9;&#9;&quot;qa&quot;: {&#10;&#9;&#9;&#9;&quot;EnvironmentConfig&quot;: {&#10;&#9;&#9;&#9;&#9;&quot;api&quot;: &quot;http://qa.url.com&quot;&#10;&#9;&#9;&#9;}&#10;&#9;&#9;},&#10;&#9;&#9;&quot;production&quot;: {&#10;&#9;&#9;&#9;&quot;EnvironmentConfig&quot;: {&#10;&#9;&#9;&#9;&#9;&quot;api&quot;: &quot;http://production.url.com&quot;&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}&#10;}" description="Inserts companion project config" toReformat="false" toShortenFQNames="true">
@@ -84,6 +76,10 @@
     <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JSON" value="true" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
     </context>
   </template>
   <template name="ang:state" value=".state('$HOME$', {&#10;    templateProvider: ['$templateCache', function ($templateCache) {&#10;        return $templateCache.get('$COMPONENTFOLDER$/$COMPONENTNAME$.partial.html');&#10;    }],&#10;    controller: '$CONTROLLER$',&#10;    controllerAs: 'vm'&#10;})" description="Inserts a new ui-router State definition" toReformat="false" toShortenFQNames="true">
@@ -91,6 +87,12 @@
     <variable name="COMPONENTFOLDER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="COMPONENTNAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ang:module" value="(function () {&#10;&#9;'use strict';&#10;&#10;&#9;angular&#10;&#9;&#9;.module('$moduleName$', [&#10;&#9;&#9;&#9;'ui.router'$END$&#10;&#9;&#9;]);&#10;&#10;})();" description="Inserts a blank AngularJS Module" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
